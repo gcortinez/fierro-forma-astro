@@ -20,6 +20,8 @@ Landing page profesional para Fierro y Forma, empresa especializada en mobiliari
 - ✅ Optimizado para SEO
 - ✅ Performance optimizado
 - ✅ Dark mode support
+- ✅ Vercel Analytics integrado
+- ✅ Performance monitoring con Speed Insights
 
 ## 🎯 Secciones
 
