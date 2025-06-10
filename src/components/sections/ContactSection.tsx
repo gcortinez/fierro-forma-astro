@@ -34,6 +34,21 @@ export default function ContactSection() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // Debug: Verificar que las variables se cargan
+    console.log('EmailJS Config:', {
+      serviceId: EMAILJS_SERVICE_ID,
+      templateId: EMAILJS_TEMPLATE_ID,
+      publicKey: EMAILJS_PUBLIC_KEY
+    });
+
+    // Verificar que todas las variables estén presentes
+    if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      console.error('Missing EmailJS configuration');
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
       // Enviar email con EmailJS
       await emailjs.send(
