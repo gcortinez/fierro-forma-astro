@@ -1,47 +1,71 @@
-# Astro Starter Kit: Minimal
+# Fierro y Forma - Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
+Landing page profesional para Fierro y Forma, empresa especializada en mobiliario comercial y de oficina.
+
+## 🚀 Tecnologías
+
+- **Astro** - Framework web moderno
+- **React** - Componentes interactivos
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos utilitarios
+- **shadcn/ui** - Componentes UI
+- **EmailJS** - Envío de formularios
+- **Lucide React** - Iconos
+
+## 📋 Características
+
+- ✅ Diseño responsive y moderno
+- ✅ Formulario de contacto funcional
+- ✅ Navegación suave entre secciones
+- ✅ Optimizado para SEO
+- ✅ Performance optimizado
+- ✅ Dark mode support
+
+## 🎯 Secciones
+
+1. **Hero** - Presentación principal con CTAs
+2. **Servicios** - Calidad, diseño, entrega y asesoría
+3. **Nosotros** - Experiencia y materiales premium
+4. **Contacto** - Formulario funcional + datos de contacto
+
+## 🛠️ Desarrollo
+
+```bash
+# Instalar dependencias
+npm install
+
+# Desarrollo local
+npm run dev
+
+# Build para producción
+npm run build
+
+# Preview del build
+npm run preview
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## 📧 Configuración del formulario
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El formulario usa EmailJS para envío directo de emails. Configura las variables de entorno:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```env
+PUBLIC_EMAILJS_SERVICE_ID=tu_service_id
+PUBLIC_EMAILJS_TEMPLATE_ID=tu_template_id
+PUBLIC_EMAILJS_PUBLIC_KEY=tu_public_key
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Ver `FORMULARIO_SETUP.md` para instrucciones detalladas.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🚀 Deploy en Vercel
 
-Any static assets, like images, can be placed in the `public/` directory.
+Ver `VERCEL_DEPLOY.md` para instrucciones completas de despliegue.
 
-## 🧞 Commands
+## 📞 Contacto
 
-All commands are run from the root of the project, from a terminal:
+- **Email**: contacto@fierroyforma.cl
+- **Teléfono**: +56 9 6209 6849
+- **WhatsApp**: [Contactar](https://wa.me/56962096849)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Desarrollado con ❤️ para Fierro y Forma
